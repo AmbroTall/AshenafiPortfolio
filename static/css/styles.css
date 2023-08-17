@@ -82,15 +82,34 @@ section {
 
 .hobbies{
     display: flex;
-    gap:50px;
-    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
     padding: 50px 0px 0px 0px ;
+    max-height: 500px;
 }
 
 .image-school{
     flex: 1;
     position: relative;
 }
+
+
+
+.hobbi-img{
+    min-width: 100% !important;
+    height: 250px;
+    object-fit: contain;
+}
+
+.hobbi-title{
+    font-size: 34px;
+}
+
+.hobbi-contents{
+    line-height: 5;
+    spacing-unit: 48px;
+}
+
 
 .sch-img{
     width: 100%;
