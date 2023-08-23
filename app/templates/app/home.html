@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Portfolio</title>
+    <title>Ashenafi Abera</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/hobbiesash.JPG' %}">
     <link href="{% static 'css/styles.css' %}" rel="stylesheet">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
@@ -36,11 +37,11 @@
             </p>
             <div class="btn-con" style="display: flex; gap: 15px">
                 <a class="main-btn" href="{% url 'app:download_pdf' %}" style="padding: 5px;">
-                    <span class="btn-text">Download CV</span>
+                    <span id="btn-tex" class="btn-text">Download CV</span>
                     <span class="btn-icon"><i class="fas fa-download"></i></span>
                 </a>
                 <a class="main-btn" href="{% url 'app:view_pdf' %}" style="padding: 5px;" target="_blank">
-                    <span class="btn-text">View CV</span>
+                    <span id="btn-tex" class="btn-text">View CV</span>
                     <span class="btn-icon"><i class="fas fa-binoculars"></i></span>
                 </a>
 
@@ -392,13 +393,16 @@
         <div class="main-title">
             <h2>My <span>Hobbies</span><span class="bg-text">Activities</span></h2>
         </div>
-        <div class="image-hobbie">
-            <img alt="finish line" class="hobbi-img" src="{% static 'images/ashtri.jpg' %}"/>
-        </div>
-        <div class="hobbies">
+        <div class="image-container">
+            <div class="image-hobbie">
+                <img alt="finish line" class="hobbi-img" src="{% static 'images/ashtri.jpg' %}"/>
+            </div>
             <div class="image-school">
                 <img alt="school image" class="sch-img" src="{% static 'images/hobbiesash.JPG' %}"/>
             </div>
+        </div>
+        <div class="hobbies">
+
             <div class="hobbi-contents">
                 <h1 class="hobbi-title">List of activities I enjoy</h1>
                 <h4 class="school-name"><span style="font-weight: bold; font-size: 18px"> > </span> Cycling </h4>
@@ -469,16 +473,16 @@
                     <div class="contact-icons">
                         <div class="contact-icon">
                             <a href="www.facebook.com" target="_blank">
-                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-facebook" style="color: blue"></i>
                             </a>
                             <a href="#" target="_blank">
-                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-twitter" style="color: skyblue"></i>
                             </a>
                             <a href="#" target="_blank">
                                 <i class="fab fa-github"></i>
                             </a>
                             <a href="#" target="_blank">
-                                <i class="fab fa-youtube"></i>
+                                <i class="fab fa-youtube" style="color: red"></i>
                             </a>
                         </div>
                     </div>
